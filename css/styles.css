@@ -35,7 +35,7 @@ body {
   align-items: center;
   min-height: 800px;
   min-width: 360px;
-  padding: 80px 40px;
+  padding: 80px 30px;
 }
 
 .article-content__notice-container {
@@ -208,17 +208,18 @@ body {
   }
 
   .notice-container__title {
-    font-size: 3.5em;
+    font-size: 3em;
     line-height: 1.2;
+    font-weight: 700;
   }
 
   .article-content__form-section {
-    width: 45%;
+    width: 40%;
     align-content: center;
   }
 
   .form-section__header {
-    height: 70px;
+    height: 60px;
   }
 
   .input-invalid-message {
