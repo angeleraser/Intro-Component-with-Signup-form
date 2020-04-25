@@ -15,6 +15,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+legend{
+  display: none;
+}
+
 .text {
   color: rgb(240, 240, 240);
   font-weight: 600;
