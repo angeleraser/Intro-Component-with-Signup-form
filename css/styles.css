@@ -144,7 +144,7 @@ legend{
 }
 
 .input::placeholder {
-  color: #333;
+  color: rgba(0,0,0,.7);
 }
 
 .input__submit-button {
@@ -212,7 +212,7 @@ legend{
   }
 
   .notice-container__title {
-    font-size: 3em;
+    font-size: 3.5em;
     line-height: 1.2;
     font-weight: 700;
   }
