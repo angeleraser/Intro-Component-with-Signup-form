@@ -1,0 +1,4 @@
+extends ./template/template.pug
+block inputs
+  each input in inputs
+    +inputForm(input.type,input.name,`${input.name.toLowerCase().split(' ').join('-')}`,input.value,input.invalidMessage)

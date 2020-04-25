@@ -1,0 +1,35 @@
+- 
+  const inputs = [
+    {
+      type:"text",
+      name: "First Name",
+      invalidMessage: `First Name cannot be empty`,
+    },
+    {
+      type:"text",
+      name: "Last Name",
+      invalidMessage: `Last Name cannot be empty`,
+    },
+     {
+      type:"email",
+      name: "Email Adress",
+      invalidMessage: `Look like this is not and email`,
+    },
+    {
+      type:"password",
+      name: "Password",
+      invalidMessage: `Password cannot be empty`,
+    },
+    {
+      type:"submit",
+      name:"submit-button",
+      value:"CLAIM YOUR FREE TRIAL",
+    }
+  ]
+mixin inputForm(type,placeHolder,n,val,invalid)
+  if(type ==='submit')
+    input(type= type value=val class=`input__${n}` name=n)
+  else
+    label.input-box
+      input(type= type placeholder= placeHolder class=`input input__${n}` name=n required)
+      .input-invalid-message= invalid

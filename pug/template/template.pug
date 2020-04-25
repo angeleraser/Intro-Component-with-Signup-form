@@ -1,0 +1,23 @@
+include ../config/config.pug
+doctype
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="./css/notmalize.css")
+    link(rel="stylesheet", href="./css(styles.css")
+    title Intro Component With Signup Form
+  body
+    main.main-container#main
+      article.article-content
+        section.article-content__notice-container
+          h1.notice-container__title.text Learn to code by watching others
+          p.notice-container__description.text See how experienced developers solve problems in real time. Watching scripted tutorials is great, but understanding how developers thinks is invaluable.
+        section.article-content__form-section
+          div.form-section__header
+            p.text #[strong.strong-text Try it for free 7 days] $20/mo. thereafter
+          form.form-section__form-container
+            fieldset.form-container__fieldset
+              block inputs
+          div.form__footer
+            p.text By clicking the button you are agreeing to our #[strong.strong-text  Terms and services]
