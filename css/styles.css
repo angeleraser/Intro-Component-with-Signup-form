@@ -85,24 +85,28 @@ body {
   background-color: white;
   box-shadow: 0px 9px 2px rgba(0, 0, 0, .2);
   border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
+  padding: 20px;
 }
 
 .form-section__form-container fieldset {
-  display: grid;
   border: none;
-  grid-template-rows: repeat(6, 1fr);
-  height: 90%;
   width: 100%;
-  row-gap: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .input-box {
   justify-self: center;
-  width: 90%;
+  width: 100%;
+}
+
+.input-box:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .input {
@@ -249,8 +253,8 @@ body {
     height: 70px;
   }
 
-  .form-section__form-container fieldset {
-    padding: 50px 10px 10px;
+  .form-section__form-container {
+    padding-top: 30px;
   }
 
   .input-invalid-message {
