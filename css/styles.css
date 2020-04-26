@@ -197,7 +197,7 @@ legend{
 
   .input,
   .input__submit-button {
-    height: 25%;
+    height: 20%;
   }
 
   .article-content {
@@ -228,6 +228,10 @@ legend{
 
   .input-invalid-message {
     text-align: right;
+  }
+  
+  .form-section__form-container{
+    padding: 30px;
   }
 
 }
